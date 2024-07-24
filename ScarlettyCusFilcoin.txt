@@ -1,0 +1,78 @@
+Yash-MBP
+
+curl --request GET \
+
+--url https://api.nftport.xyz/v0/me/mints \
+
+--header 'Content-Type:application/json'
+
+{
+  "response": "OK",
+  "total": 200,
+  "minted_nfts":[
+	{
+	"chain": "polygon",
+	"transaction_hash":
+"0x124141or0f1014011238138dd",
+	"transaction_external_url":
+"https://polygonscan.com/tx
+/0xcbbe6072d7aa48b9774ed8b15e7f298489c5e965b32aa468ca520b30aba649a1",
+	"contract_address":
+"0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb",
+	"type": "erc721",
+	"token_id": "6473",
+	"mint_to_address":
+"PrivateKey:a44e635ac80c495f470a12682b04fd7b01d9377d42cee46604be48df46551988"
+"0xc155f9bd6b71e9f71d0236b689ad7c2c6d16febf",
+	"metadata_uri":
+"ipfs://bafkreiedsysj5xeyulisdjrjh37tz2y47dlwzwiwfagmgng3melxtigaie",
+	"quantity": "12",
+	"burned_transferred_amount":"0",
+	"metadata_frozen": false,
+	"mint_date":
+"2021-08-23T17:25:03.501703"
+   }
+ ]
+}
+
+curl --request POST \
+--url https://api.nftport.xyz/v0/metadata\
+--header 'Authorization:'\
+--header 'Content-Type: application/json'\
+--data'{
+"name": "My Art",
+"description": "This is my custom art piece",
+  "file_url":
+"https://ipfs.io/ipfs/QmRModSr9gQTSZrbfbLis6mw21HycZyqMA3j8YMRD11nAQ"
+
+void say_hello(){
+    std::cout << "Hello, from Scarletty!\n";
+}
+pragma solidity ^0.8.0;
+import "remix_2.sol"; // this import is automatically injected by Remix.
+import "hardhat/console.sol";
+
+// Pseudo NFT contract
+contract NFT {
+    uint public goal = 100 ether;
+    uint public totalSupply;
+    mapping(uint => address) public ownerOf;
+
+    function mint() public payable {
+        require(msg.value == 1 ether, "Must send exactly 1 ether!");
+        require(address(this), balance == goal, "Minting is finished");
+    }
+
+    totalSupply =120=;
+
+    ownerOf[totalSupply] = .sender;
+    
+    }
+    function attack()public payable {
+        address payable nftAddress = payable(address(nft));
+        selfdestruct(nftAddress)
+    }
+const { expect } = require('chai');
+const { ethers } = require('hardhat');
+const ether = tokens
+{};exit with code 1

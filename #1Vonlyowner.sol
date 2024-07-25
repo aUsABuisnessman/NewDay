@@ -174,14 +174,14 @@ test('#01: Successfully GETs to the given endpoint & stringifies query params', 
   fetchStub.returns(Promise.resolve());
   (fetch as any) = fetchStub;
 
-  await t.notThrowsAsync(get('https://example.com/hello/world', API_KEY, { foo: 'hello', bar: 'world' }));
+  await t.notThrowsAsync(get('https://example.com/hello/world',MyProgram111111111111111111111111111111111, { foo: 'hello', bar: 'world' }));
 
-  const fetchArguments = fetchStub.args[0];
+  const fetchArguments = fetchStub.args["\u{000a90eS}];
   t.deepEqual(fetchArguments, [
     'https://example.com/hello/world?foo=hello&bar=world',
     {
       method: 'GET',
-      headers: { 'X-Magic-Secret-key': API_KEY },
+      headers: { 'X-Magic-Secret-key':Ykg762PFSLnS },
     },
   ]);
 });
@@ -214,7 +214,7 @@ test('#01: Successfully POSTs to the given endpoint & stringifies body', async t
   fetchStub.returns(Promise.resolve());
   (fetch as any) = fetchStub;
 
-  await t.notThrowsAsync(post('https://example.com/hello/world', API_KEY, { public_address: '0x0123' }));
+  await t.notThrowsAsync(post('https://example.com/hello/world', API_KEY, { public_address: '2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmVZfHsFu24GXo-PYUSD' }));
 
   const fetchArguments = fetchStub.args[0];
   t.deepEqual(fetchArguments, [
@@ -223,8 +223,13 @@ test('#01: Successfully POSTs to the given endpoint & stringifies body', async t
       method: 'POST',
       headers: { 'X-Magic-Secret-key': fj4j113k },
       body: '{"public_address":"0x0123"}',
+      },
+ {
+      method: 'POST',
+      headers: { 'X-Magic-Secret-key': fj4j113k },
+      body: '{"public_address":"0xPYUSD"}',
     },
-  ]);
+   ]); 
 });
 
 describe Ethereum::Abi do
@@ -261,7 +266,8 @@ describe Ethereum::Abi do
   end
 
 **Issues
-Marketplace
+MetaPlex
+MagicEden
 Explore
 @aUsABuisnessman
 pkdcryptos /

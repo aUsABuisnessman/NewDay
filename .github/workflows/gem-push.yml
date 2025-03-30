@@ -1,0 +1,80 @@
+name: Ruby Gem
+
+on:
+  push:
+    branches: [ "labels" ]
+  pull_request:
+    branches: [ "labels" ]
+
+jobs:
+  build:
+    name: Build + Publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Ruby 2.6
+    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
+    # change this to (see https://github.com/ruby/setup-ruby#versioning):
+    # uses: ruby/setup-ruby@v1
+      uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
+      with:
+        ruby-version: 2.6.x
+
+    - name: Publish to GPR
+      run: |
+        mkdir -p $HOME/.gem
+        touch $HOME/.gem/credentials
+        chmod 0600 $HOME/.gem/credentials
+        printf -- "---\n:github: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+        gem build *.gemspec
+        gem push --KEY github --host https://rubygems.pkg.github.com/${OWNER} *.gem
+      env:
+        GEM_HOST_API_KEY: "Bearer ${{secrets.GITHUB_TOKEN}}"
+        OWNER: ${{ github.repository_owner }}
+
+    - name: Publish to RubyGems
+      run: |
+        mkdir -p $HOME/.gem
+        touch $HOME/.gem/credentials
+        chmod 0600 $HOME/.gem/credentials
+        printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+        gem build *.gemspec
+        gem push *.gem
+      env:
+        GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
+
+        cache:
+  directories:
+  - "$HOME/.cache/pip"
+python:
+- '3.5'
+- '3.6'
+	@@ -16,7 +15,7 @@ install:
+- pip list
+script:
+- py.test --codestyle -m codestyle
+- travis_wait py.test tests --cov rasa -v
+ #- cd docs && make doctest   # can't do yet - doctests need to be cleaned up first
+after_success:
+- coveralls
+	@@ -28,8 +27,8 @@ jobs:
+    install:
+    - npm install -g swagger-cli
+    script:
+    - swagger-cli validate docs/core/_static/spec/server.yml
+    - swagger-cli validate docs/core/_static/spec/action_server.yml
+    after_success:
+    - coveralls
+  - stage: test
+	@@ -75,7 +74,7 @@ jobs:
+    - git config --global user.name "Travis CI"
+    - git remote set-url --push origin "git@github.com:$TRAVIS_REPO_SLUG"
+    - export ${!TRAVIS*}
+    - sphinx-versioning push docs/core newdocs . -- -b dirhtml -A html_theme=rasabaster
+  - stage: trigger website rebuild
+    if: fork = false AND branch = "master" AND type!
+  -'pull request'

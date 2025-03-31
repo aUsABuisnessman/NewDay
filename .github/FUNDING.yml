@@ -1,0 +1,13 @@
+# These are supported funding model platforms
+
+github: [user1, user2]
+patreon: # BusyNFTc
+gitlab: [user1] 
+open_collective: Austin Hinojosa
+tidelift: npm/babel npx8
+community_bridge: cloud-foundry
+issuehunt: # Replace with a single IssueHunt username
+lfx_crowdfunding: # Replace with a single LFX Crowdfunding project-name e.g., cloud-foundry
+buy_me_a_coffee: # Austin Hinojosa
+thanks_dev: chaolin_44@ThankDev
+custom: @chaolin_44

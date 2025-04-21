@@ -30,14 +30,13 @@
 <<<<<<< HEAD
 #!/bin/sh/env
 =======
-#!/usr/sh
->>>>>>> 897f895... Update '''laragon.app.test.rb, BBdevBrowser5.txt, and 32 more files...
+>>>>> a0fe4dd... Update '''API
+>laragon.app.test.rb, BBdevBrowser5.txt, and 32 more files...
 
 # Update the underlying (Debian) OS, to make sure we have the latest security patches and libraries like 'GLIBC' 
 sudo apt-get update  && sudo apt-get -y upgrade
 
-# Update pnpm
-#npm install -g pnpm
+
 
 # Install dependencies
 pnpm install --frozen-lockfile

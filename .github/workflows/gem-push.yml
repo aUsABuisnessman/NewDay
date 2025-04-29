@@ -10,8 +10,6 @@ jobs:
   build:
     name: Build + Publish
     runs-on: ubuntu-latest
-   jobs:
-  build:
     strategy:
       matrix:
         python:  # This is the Python versions matrix

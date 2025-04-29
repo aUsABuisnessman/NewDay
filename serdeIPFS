@@ -1,3 +1,4 @@
+#!/path/to/interpreter
 name: Kubo Sharness
 
 on:

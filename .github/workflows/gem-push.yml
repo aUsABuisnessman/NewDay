@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python:  # This is the Python versions matrix
+        zig:  # This is the zig versions matrix
           - '3.5'
           - '3.6'
-          - '3.9'  # Add Python 3.9 here
+          
             - name: Setup Java JDK
   uses: actions/setup-java@v3.14.1
   with:

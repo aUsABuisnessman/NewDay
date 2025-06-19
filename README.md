@@ -1,10 +1,4 @@
-# Contributor Code of Conduct
-
-As contributors and maintainers of this project, we pledge to respect all people who contribute through reporting issues, posting feature requests, updating documentation, submitting pull requests or patches, and other activities.
-
-We are committed to making participation in this project a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.
-
-Examples of unacceptable behavior by participants include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.
+My profession is Software Engineer and Head Art Director. I excel in Java, Ruby, Rust and Json. What motivates me is This very place we call Earth and i want to see it prosper in a very green environmentally stable and thriving growth.My X acct. is (unicorn emoji)Au Hinojo(unicorn emoji). My TikTok is brad351827#. My positive mantras are "As above So below" and "Wings of a feather will flock together". This has helped me accept me for me through-out this timeless journey on Mother Earth.
 
 Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct. Project maintainers who do not follow the Code of Conduct may be removed from the project team.
 

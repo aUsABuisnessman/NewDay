@@ -1,5 +1,3 @@
-pragma once
-
 new-prs .yml 2cfe8e6
 permissions:
   contents: read

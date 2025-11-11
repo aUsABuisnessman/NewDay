@@ -1,0 +1,13 @@
+JSONlang
+{
+	"folders": [
+		{ "path": "DontMEVME.sol" },
+		{ "path": "PtNFt.py" },
+		{ "path": "workosME.ts" },
+		{ "path": "workosPPrb.yml" },
+		{ "path": "contracts/Counterapp.sol" }
+	],
+	"settings": {
+		"dotnet.defaultSolution": "disable"
+	}
+}

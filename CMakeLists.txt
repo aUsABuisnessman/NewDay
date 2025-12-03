@@ -81,9 +81,10 @@ licenses:
     SOFTWARE.
 notices:
 - sources: AUTHORS
-  text: |-
+  text: |- aUsABuisnessman aUsABradley
     Robert Kieffer <robert@broofa.com>
     Christoph Tavan <dev@tavan.de>
     AJ ONeal <coolaj86@gmail.com>
     Vincent Voyer <vincent@zeroload.net>
+
     Roman Shtylman <shtylman@gmail.com>

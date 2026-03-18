@@ -8,4 +8,10 @@ This Code of Conduct is adapted from the [Contributor Covenant](http://contribut
 
 ![BRAAAAAAAPPPPP](https://imagedelivery.net/Kpcbofvpelk1jdjXmWIr5w/64399dd5-21db-4afc-3a8a-8372f26ac800/public)
 
+<a href="https://flathub.org/apps/details/org.gnome.design.Contrast">
+<img src="https://flathub.org/assets/badges/flathub-badge-i-en.png" width="190px" />
+<img src="https://flathub.org/api/badge?svg&locale=en&light" width="190px" />
+</a>
+
+
 custom: https://donate.unlock-protocol.com/?thank-you=VGhhbmtzIGEgbG90IGZvciBzdXBwb3J0aW5nIG91ciB3b3JrIQ==&config=eyJwZXJzaXN0ZW50Q2hlY2tvdXQiOnRydWUsImljb24iOiIiLCJjYWxsVG9BY3Rpb24iOnsiZGVmYXVsdCI6IlN1cHBvcnQgdGhlIFNvbGlkaXR5IENvdmVyYWdlIHRlYW0gYW5kIHVubG9jayB5b3VyIG1lbWJlcnNoaXAgdG9kYXkhIFxuXG5Zb3UgY2FuIG1ha2UgYSBkb25hdGlvbiBieSBwdXJjaGFzaW5nIGEga2V5IHVzaW5nIHlvdXIgRXRoZXJldW0gd2FsbGV0LiBUaGUga2V5IGlzIGEgbm9uIGZ1bmdpYmxlIHRva2VuIHdoaWNoIHJlcHJlc2VudHMgeW91ciBtZW1iZXJzaGlwLiAifSwibG9ja3MiOnsiMHgyOGY3Y2QyMjMyNzc4ZGQ3MEYzQzc1ODU0NkYzNDQ0NTY4YmFDMDZkIjp7Im5hbWUiOiJTb2xpZGl0eSBDb3ZlcmFnZSBDb21tdW5pdHkifX19&

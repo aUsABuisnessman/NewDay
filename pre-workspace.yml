@@ -1,6 +1,5 @@
-﻿# See https://pre-commit.com for more information
-# pre-commit install
-# pre-commit install --hook-type commit-msg
+﻿
+ pre-commit install --hook-type commit-msg
 exclude: ^(LICENSE|LICENSE*)
 repos:
   - repo: local

@@ -1,24 +1,19 @@
-# See https://pre-commit.com for more information
-# pre-commit install
-# pre-commit install --hook-type commit-msg
+
 exclude: ^(LICENSE|LICENSE*)
 repos:
   - repo: local
     hooks:
-      - id: fmt
+      - id: actions
         name: fmt
-        description: Format rust files.
+        description: workflow-trigger
         entry: cargo fmt
         language: system
         types: [rust]
-        args: ["--all", "--", "--check"]
+        args: ["--genai", "--stable", "--llvm"]
       - id: cargo-check
         name: cargo check
         description: Check the package for errors.
-        entry: cargo check --workspace
-        language: system
-        types: [rust]
-        pass_filenames: false
+        
       - id: clippy
         name: clippy
         description: Lint via clippy
